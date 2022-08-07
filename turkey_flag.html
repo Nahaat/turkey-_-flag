@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document</h1>
+    <a href="index.html">Home page</a>
+    <script>
+        let body = document.querySelector("body");
+        body.style.margin = "0";
+
+        let container = document.createElement("div");
+        container.style.width = "100";
+        container.style.height = "100vh";
+        container.style.position = "relative";
+        body.appendChild(container);
+
+        let red = document.createElement("div");
+        red.style.position = "absolute";
+        red.style.top = "0";
+        red.style.width = "100%";
+        red.style.backgroundColor = "red";
+        red.style.height = "100%";
+        container.appendChild(red);
+
+        //white
+        let white = document.createElement("div");
+        white.style.position = "absolute";
+        white.style.borderStyle = "solid";
+        white.style.borderColor = "transparent transparent transparent transparent";
+        white.style.borderWidth = "20vh";
+        container.appendChild(white);
+
+    </script>
+</body>
+</html>
